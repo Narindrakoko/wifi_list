@@ -70,4 +70,3 @@ connect_button.pack(pady=10)
 
 # Start the GUI event loop
 root.mainloop()
-
