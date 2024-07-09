@@ -33,7 +33,7 @@ def populate_table():
 def connect_to_wifi():
     selected_item = tree.selection()
     if not selected_item:
-        messagebox.showwarning("No Selection", "Please select a network to connect to.")
+        messagebox.showwarning("No Selection", "Please select a network to connect.")
         return
 
     ssid = tree.item(selected_item[0], "values")[1]
@@ -44,7 +44,7 @@ def connect_to_wifi():
         if result.returncode == 0:
             messagebox.showinfo("Success", f"Connected to {ssid}")
         else:
-            messagebox.showerror("Error", f"Failed to connect to {ssid}\n{result.stderr}")
+            messagebox.showerror("Error", f"Failed to connect to  {ssid}\n{result.stderr}")
 
 def refresh_wifi_list():
     global wifi_list
